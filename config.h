@@ -1,7 +1,7 @@
 static struct Config config = {
 	/* fonts, separate different fonts with comma */
-	.titlefont = "rissole:size=8:style=bold",
-	.bodyfont = "rissole:size=8",
+	.titlefont = "monospace:size=9:style=bold",
+	.bodyfont = "monospace:size=9",
 
 	/* colors */
 	.background_color = "#005577",
