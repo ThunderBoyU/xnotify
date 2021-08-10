@@ -19,6 +19,7 @@ clean:
 install: all
 	mkdir -p ${DESTDIR}${PREFIX}/bin
 	install -m 755 ${PROG} ${DESTDIR}${PREFIX}/bin/${PROG}
+	install -m 755 launchxnotify ${DESTDIR}${PREFIX}/bin/launchxnotify
 	mkdir -p ${DESTDIR}${MANPREFIX}/man1
 	install -m 644 ${PROG}.1 ${DESTDIR}${MANPREFIX}/man1/${PROG}.1
 

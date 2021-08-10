@@ -1,15 +1,15 @@
 static struct Config config = {
 	/* fonts, separate different fonts with comma */
-	.titlefont = "monospace:size=9:style=bold",
-	.bodyfont = "monospace:size=9",
+	.titlefont = "rissole:size=8:style=bold",
+	.bodyfont = "rissole:size=8",
 
 	/* colors */
-	.background_color = "#000000",
-	.foreground_color = "#FFFFFF",
-	.border_color = "#3465a4",
+	.background_color = "#005577",
+	.foreground_color = "#ffffff",
+	.border_color = "#222222",
 
 	/* geometry and gravity (see the manual) */
-	.geometryspec = "0x0+0+0",
+	.geometryspec = "0x0+0+15",
 	.gravityspec = "NE",
 
 	/* size of border, gaps and image (in pixels) */
@@ -18,7 +18,7 @@ static struct Config config = {
 	.image_pixels = 80,     /* if 0, the image will fit the notification */
 	.leading_pixels = 5,    /* space between title and body texts */
 	.padding_pixels = 10,   /* space around content */
-	.max_height = 300,      /* maximum height of a notification, after text wrapping */
+	.max_height = 700,      /* maximum height of a notification, after text wrapping */
 
 	/* text alignment, set to LeftAlignment, CenterAlignment or RightAlignment */
 	.alignment = LeftAlignment,
@@ -27,7 +27,7 @@ static struct Config config = {
 	.shrink = 0,
 
 	/* whether to wrap text */
-	.wrap = 0,
+	.wrap = 1,
 
 	/* time, in seconds, for a notification to stay alive */
 	.sec = 10,

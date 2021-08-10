@@ -1,0 +1,11 @@
+#!/bin/sh
+
+pidof xnotify >/dev/null && killall xnotify
+pidof tiramisu >/dev/null && killall tiramisu
+
+rm -f $XNOTIFY_FIFO
+mkfifo $XNOTIFY_FIFO
+xnotify 0<>$XNOTIFY_FIFO &
+
+sleep 2
+tiramisu -o "$(printf '#summary\t#body\n')" > $XNOTIFY_FIFO &
